@@ -1,0 +1,8 @@
+{
+  "name": "wind-calculator",
+  "version": "0.1.0",
+  "description": "Wind speed converter",
+  "main": "lib/index.js",
+  "repository": "git@github.com:fincompare/product-2-components.git",
+  "author": "semik.lukasz@gmail.com"
+}
