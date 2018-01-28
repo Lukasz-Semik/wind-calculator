@@ -74,7 +74,7 @@ var WindCalculator = function () {
   }, {
     key: 'BftToMeter',
     value: function BftToMeter(wind, BftAproximations) {
-      console.warn('Beufort is an interval, result is an aproximation. You should use another unit.');
+      console.warn('Beufort is an interval, result is an aproximation. Please, use another unit');
       return BftAproximations[wind];
     }
   }]);

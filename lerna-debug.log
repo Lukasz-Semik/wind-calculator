@@ -1,17 +1,87 @@
-0 silly input [ 'babel', '/app', '-d', 'lib', '--ignore', '*.test.js' ]
-1 silly flags { _: [ 'exec' ],
-1 silly flags   'reject-cycles': false,
-1 silly flags   rejectCycles: false,
-1 silly flags   command: 'babel',
-1 silly flags   args: [ '/app', '-d', 'lib', '--ignore', '*.test.js' ] }
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
 2 verbose rootPath /Users/lukaszsemik/Desktop/wind-calculator
 3 info version 2.8.0
-4 silly existsSync /Users/lukaszsemik/Desktop/wind-calculator/VERSION
-5 silly initialize attempt
-6 silly initialize success
-7 silly execute attempt
-8 error exec Errored while executing 'babel /app -d lib --ignore *.test.js' in 'wind-calculator'
-9 error execute callback with error
-10 error Error: Command failed: babel /app -d lib --ignore *.test.js
-10 error     at Promise.all.then.arr (/Users/lukaszsemik/Desktop/wind-calculator/node_modules/execa/index.js:236:11)
-10 error     at <anonymous>
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync /Users/lukaszsemik/Desktop/wind-calculator/VERSION
+7 silly initialize attempt
+8 info current version 0.0.0
+9 silly isDetachedHead
+10 silly getCurrentBranch
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags false
+19 info Comparing with initial commit.
+20 verbose updated wind-calculator
+21 info Checking for prereleased packages...
+22 silly collectDependents
+23 silly isPackageDependentOf wind-calculator wind-calculator
+24 silly collectUpdates
+25 verbose has filtered update wind-calculator
+26 silly initialize success
+27 silly execute attempt
+28 silly addFile /Users/lukaszsemik/Desktop/wind-calculator/lerna.json
+29 silly runScriptSync preversion wind-calculator
+30 silly runScriptSync preversion wind-calculator
+31 silly runScriptSync version wind-calculator
+32 silly runScriptSync version wind-calculator
+33 silly addFile /Users/lukaszsemik/Desktop/wind-calculator/packages/wind-calculator/package.json
+34 silly commit v0.0.1
+35 verbose commit [ 'commit', '--no-verify', '-m', 'v0.0.1' ]
+36 silly addTag v0.0.1
+37 silly runScriptSync postversion wind-calculator
+38 silly runScriptSync postversion wind-calculator
+39 info publish Publishing packages to npm...
+40 silly existsSync /Users/lukaszsemik/Desktop/wind-calculator/packages/wind-calculator/scripts/prepublish.js
+41 verbose execScript No prepublish script found at /Users/lukaszsemik/Desktop/wind-calculator/packages/wind-calculator/scripts/prepublish.js
+42 verbose publishing wind-calculator
+43 silly publishTaggedInDir latest wind-calculator
+44 silly getExecOpts { cwd: '/Users/lukaszsemik/Desktop/wind-calculator/packages/wind-calculator' }
+45 error publish Retrying failed publish: wind-calculator
+46 verbose publish error undefined
+47 verbose publishing wind-calculator
+48 silly publishTaggedInDir latest wind-calculator
+49 silly getExecOpts { cwd: '/Users/lukaszsemik/Desktop/wind-calculator/packages/wind-calculator' }
+50 error publish Retrying failed publish: wind-calculator
+51 verbose publish error undefined
+52 verbose publishing wind-calculator
+53 silly publishTaggedInDir latest wind-calculator
+54 silly getExecOpts { cwd: '/Users/lukaszsemik/Desktop/wind-calculator/packages/wind-calculator' }
+55 error publish Retrying failed publish: wind-calculator
+56 verbose publish error undefined
+57 verbose publishing wind-calculator
+58 silly publishTaggedInDir latest wind-calculator
+59 silly getExecOpts { cwd: '/Users/lukaszsemik/Desktop/wind-calculator/packages/wind-calculator' }
+60 error publish Retrying failed publish: wind-calculator
+61 verbose publish error undefined
+62 verbose publishing wind-calculator
+63 silly publishTaggedInDir latest wind-calculator
+64 silly getExecOpts { cwd: '/Users/lukaszsemik/Desktop/wind-calculator/packages/wind-calculator' }
+65 error publish Ran out of retries while publishing wind-calculator Error: Command failed: npm publish --tag latest
+65 error publish npm ERR! code ENEEDAUTH
+65 error publish npm ERR! need auth auth required for publishing
+65 error publish npm ERR! need auth You need to authorize this machine using `npm adduser`
+65 error publish
+65 error publish npm ERR! A complete log of this run can be found in:
+65 error publish npm ERR!     /Users/lukaszsemik/.npm/_logs/2018-01-28T18_59_28_281Z-debug.log
+65 error publish
+65 error publish     at Promise.all.then.arr (/Users/lukaszsemik/Desktop/wind-calculator/node_modules/execa/index.js:236:11)
+65 error publish     at <anonymous>
+65 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
+66 error execute callback with error
+67 error Error: Command failed: npm publish --tag latest
+67 error npm ERR! code ENEEDAUTH
+67 error npm ERR! need auth auth required for publishing
+67 error npm ERR! need auth You need to authorize this machine using `npm adduser`
+67 error
+67 error npm ERR! A complete log of this run can be found in:
+67 error npm ERR!     /Users/lukaszsemik/.npm/_logs/2018-01-28T18_59_28_281Z-debug.log
+67 error
+67 error     at Promise.all.then.arr (/Users/lukaszsemik/Desktop/wind-calculator/node_modules/execa/index.js:236:11)
+67 error     at <anonymous>
